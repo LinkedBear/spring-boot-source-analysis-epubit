@@ -4,7 +4,7 @@ import com.linkedbear.springboot.assemble.a_module.component.Boss;
 import com.linkedbear.springboot.assemble.a_module.config.BartenderConfiguration;
 import com.linkedbear.springboot.assemble.a_module.registrar.WaiterRegistrar;
 import com.linkedbear.springboot.assemble.a_module.selector.BarImportSelector;
-import com.linkedbear.springboot.assemble.a_module.selector.WaiterDefferedImportSelector;
+import com.linkedbear.springboot.assemble.a_module.selector.WaiterDeferredImportSelector;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.Documented;
@@ -17,7 +17,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @Import({Boss.class, BartenderConfiguration.class, BarImportSelector.class, WaiterRegistrar.class,
-                WaiterDefferedImportSelector.class
+                WaiterDeferredImportSelector.class
         })
 public @interface EnableTavern {
     

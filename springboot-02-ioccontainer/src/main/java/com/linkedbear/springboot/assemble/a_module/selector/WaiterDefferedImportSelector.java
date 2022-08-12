@@ -4,11 +4,11 @@ import com.linkedbear.springboot.assemble.a_module.component.Waiter;
 import org.springframework.context.annotation.DeferredImportSelector;
 import org.springframework.core.type.AnnotationMetadata;
 
-public class WaiterDefferedImportSelector implements DeferredImportSelector {
+public class WaiterDeferredImportSelector implements DeferredImportSelector {
     
     @Override
     public String[] selectImports(AnnotationMetadata importingClassMetadata) {
-        System.out.println("WaiterDefferedImportSelector invoke ......");
+        System.out.println("WaiterDeferredImportSelector invoke ......");
         return new String[] {Waiter.class.getName()};
     }
 }
