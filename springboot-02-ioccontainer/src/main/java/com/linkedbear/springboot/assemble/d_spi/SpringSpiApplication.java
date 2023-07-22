@@ -1,6 +1,6 @@
 package com.linkedbear.springboot.assemble.d_spi;
 
-import com.linkedbear.spring.configuration.z_spi.bean.DemoDao;
+import com.linkedbear.springboot.assemble.d_spi.bean.DemoDao;
 import org.springframework.core.io.support.SpringFactoriesLoader;
 
 import java.util.List;
